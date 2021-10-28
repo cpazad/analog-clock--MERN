@@ -1,0 +1,120 @@
+@font-face {
+	src: url('../fonts/UbuntuCondensed-Regular.ttf');
+	font-family: 'ubuntu';
+}
+* {
+	font-family: 'ubuntu';
+}
+
+
+body {
+	background-color: rgb(204, 204, 204);
+}
+
+.btn {
+	border-radius: 0px !important;
+}
+
+input, input:focus {
+	border-radius: 0px !important;
+	outline: none !important;
+	box-shadow: none !important;
+	border: 1px solid #ccc !important;
+}
+input[type="submit"]  {
+	border: 1px solid transparent !important;
+}
+
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+
+.clock {
+	width: 400px;
+	height: 400px;
+	background-color: #fff;
+	background-image: url('../media/img/clock.png');
+	background-repeat: no-repeat;
+	background-size: 390px 390px;
+	background-position: center center;
+	border-radius: 3%;
+	border:20px solid rgb(24, 63, 19);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+.clock::before {
+	content:'';
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 9999;
+}
+
+.sec {
+	width: 0px;
+	height: 270px;
+	background-color: green;
+	display: flex;
+	justify-content: center;
+
+}
+
+.sec::before {
+	content:'';
+	width: 4px;
+	height: 170px;
+	background-color: black;
+	position: absolute;
+
+}
+
+
+
+.min {
+	width: 0px;
+	height: 250px;
+	background-color: green;
+	display: flex;
+	justify-content: center;
+}
+
+.min::before {
+	content:'';
+	width: 6px;
+	height: 150px;
+	background-color: rgb(71, 55, 55);
+	position: absolute;
+
+}
+
+
+
+.hour {
+	width: 0px;
+	height: 170px;
+	background-color: green;
+	display: flex;
+	justify-content: center;
+}
+
+.hour::before {
+	content:'';
+	width: 10px;
+	height: 100px;
+	background-color: rgb(156, 97, 156);
+	position: absolute;
+
+}
+
+
